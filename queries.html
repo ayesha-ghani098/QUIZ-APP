@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Resources/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Caudex:wght@700&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script type="text/javascript">
+        function preventBack() {
+            window.history.forward();
+        }
+        setTimeout("preventBack()", 0);
+        window.onunload = function() {
+            null
+        };
+    </script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="query-content" data-aos="flip-left" data-aos-duration="2000">
+            <div class="query-header">
+                <div class="header-heading">
+                    <h1>JavaScript Quiz</h1>
+                </div>
+                <div class="header-timer">
+                    <!-- <span class="time">00:00</span> -->
+                </div>
+            </div>
+            <div class="query-body">
+                <div id="questions">
+                </div>
+                <div class="button_next">
+                    <button onclick="Next()">Next</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- quiz-js -->
+
+    <script src="Resources/js/app.js">
+    </script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>

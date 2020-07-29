@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="Resources/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Caudex:wght@700&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script type="text/javascript">
+        function preventBack() {
+            window.history.forward();
+        }
+        setTimeout("preventBack()", 0);
+        window.onunload = function() {
+            null
+        };
+    </script>
+</head>
+
+<body>
+
+    <div class="wrapper">
+
+        <div class="content" data-aos="zoom-in" data-aos-duration="2000">
+            <form class="form" name="form" onsubmit="Submitform(event) ">
+                <input type="text " name="name" id="name" placeholder="Enter Your Name">
+                <button>Let's Start</button>
+            </form>
+        </div>
+
+    </div>
+    <!-- quiz-js-->
+
+    <script src="Resources/js/app.js "></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>
